@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Stats Hub | Head 2 Head</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet">
+  </head>
+
+  <body>
+    <video autoplay muted loop id="bgvideo">
+      <source src="bg.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-overlay"></div>
+
+    <img class="logo" src="footballstatshublogo.png">
+
+    <header class="hero-header">
+      <h1><a href="index.html"></a></h1>
+    </header>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="club_h2h.html" class="nav-link">Head-to-Head Stats</a></li>
+        <li><a href="venues.html" class="nav-link">Club Venue Data</a></li>
+      </ul>
+    </nav>
+
+    <main class="h2h-interface">
+      <div class="team-box team-1">
+        <h2>Team 1</h2>
+
+        <div class="input-group">
+          <label for="country1">Country:</label>
+          <select id="country1" onchange="handleCountryChange(1)">
+            <option value="">-- Select Country --</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="team1">Club Team:</label>
+          <input list="team-options-1" id="team1" placeholder="Search and select team..." disabled>
+          <datalist id="team-options-1"></datalist>
+        </div>
+      </div>
+
+      <div class="team-box team-2">
+        <h2>Team 2</h2>
+
+        <div class="input-group">
+          <label for="country2">Country:</label>
+          <select id="country2" onchange="handleCountryChange(2)">
+            <option value="">-- Select Country --</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="team2">Club Team:</label>
+          <input list="team-options-2" id="team2" placeholder="Search and select team..." disabled>
+          <datalist id="team-options-2"></datalist>
+        </div>
+      </div>
+    </main>
+
+    <div class="button-group">
+      <button id="h2h-search-btn" onclick="searchH2H()" disabled>Get H2H Data</button>
+      <button id="clear-search-btn" onclick="clearFields()">Clear Teams</button>
+    </div>
+
+    <section id="results-container" class="results-container"></section>
+
+    <script src="club_h2h.js"></script>
+  </body>
+
+</html>

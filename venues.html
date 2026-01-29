@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Stats Hub | Venues</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet">
+  </head>
+
+  <body>
+    <video autoplay muted loop id="bgvideo">
+      <source src="bg.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-overlay"></div>
+
+    <img class="logo" src="footballstatshublogo.png">
+
+    <header class="hero-header">
+      <h1><a href="index.html"></a></h1>
+    </header>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="club_h2h.html" class="nav-link">Head-to-Head Stats</a></li>
+        <li><a href="venues.html" class="nav-link">Club Venue Data</a></li>
+      </ul>
+    </nav>
+
+    <main class="h2h-interface">
+      <div class="team-box">
+        <h2>Select League</h2>
+        <div class="input-group">
+          <select id="league-select">
+            <option value="">Select a League</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="team-box">
+        <h2>Select Team</h2>
+        <div class="input-group">
+          <select id="team-select" disabled>
+            <option value="">Select a Team</option>
+          </select>
+        </div>
+      </div>
+    </main>
+
+    <div id="venue-details-container" class="results-container"></div>
+
+    <script src="venues.js"></script>
+  </body>
+
+</html>

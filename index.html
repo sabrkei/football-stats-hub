@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Stats Hub | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet">
+  </head>
+
+  <body>
+    <img class="logo" src="footballstatshublogo.png" alt="Football Stats Hub Logo">
+
+    <video autoplay muted loop id="bgvideo">
+      <source src="bg.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+
+    <main class="data-sections-container">
+      <a href="club_h2h.html" aria-label="View Head to Head Statistics" class="stat-card" id="h2h-stats">
+        <img src="h2h.jpg" alt="Head to head club Statistics">
+        <div class="card-overlay visible-text">
+          <h2>H2H Stats</h2>
+          <p>Compare club sides recent results against one another</p>
+        </div>
+      </a>
+
+      <a href="venues.html" aria-label="View Club Venue Data" class="stat-card" id="venue-data">
+        <img src="venues.jpg" alt="Stadium Image">
+        <div class="card-overlay visible-text">
+          <h2>Club Venue Data</h2>
+          <p>Club venue Information from England, Germany & Spain</p>
+        </div>
+      </a>
+    </main>
+  </body>
+
+</html>
