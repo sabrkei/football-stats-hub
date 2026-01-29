@@ -1,4 +1,4 @@
-# Football Data Explorer
+# Football Stats Hub
 
 A web application for football enthusiasts to explore data about clubs and stadiums. This project provides two main features: viewing detailed information about club venues and comparing the head-to-head (H2H) history between two teams. The application is built with native JavaScript and fetches live data from the [API-Football](https://www.api-football.com/) service.
 
