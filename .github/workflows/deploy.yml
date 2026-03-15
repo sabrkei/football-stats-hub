@@ -22,6 +22,7 @@ jobs:
 
       - name: Create config.js from secret
         run: |
+          sed -i '/config\.js/d' .gitignore
           echo "const CONFIG = { API_KEY: '${{ secrets.FOOTBALL_API_KEY }}' };" > config.js
 
       - name: Setup Pages
