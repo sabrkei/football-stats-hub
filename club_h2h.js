@@ -1,5 +1,5 @@
-// API key
-const API_KEY = "a9b550c9d34eb19fbdae54f364e34427";
+// API key (loaded from config.js, which is excluded from git)
+const API_KEY = CONFIG.API_KEY;
 // Base URL for all API requests
 const BASE_URL = "https://v3.football.api-sports.io/";
 
